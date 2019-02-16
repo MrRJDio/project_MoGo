@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Блог</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+
+
+
+	<link rel="stylesheet" href="libs/font-awesome/css/all.min.css" type="text/css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<header class="blog_header">
+	<h3>Блог</h3>
+	<ul>
+		<li><a class="main_link" href="index.html">На главную</a></li>
+		<li class="active">Блог</li>
+	</ul>
+</header>
+
+
+<section class="articles">
+	<div class="wrapper wrapper-articles">
+		
+
+
+	</div>
+</section>
+
+
+<script id="blocks" type="text/x-handlebars-template">
+{{#each blocks}}
+
+		<a href="{{link_href}}" class="blogItem blog_item-width">
+			<div class="blog_img">
+				<img src="{{img_link}}" alt="" class="blogImg">
+				<div class="post_date">{{postdate}}<br><span>{{post_month}}</span></div>
+			</div>
+			<h5>{{post_title}}</h5>
+			<p>{{post_text}}</p>
+			<div class="comment_statistic">
+			{{#each comment_stat}}
+				<span><i class="fas fa-eye"></i>{{views}}</span>
+				<span><i class="fal fa-comment-dots"></i>{{comments}}</span>
+				{{/each}}	
+			</div>
+		</a>	
+
+{{/each}}	
+</script>
+
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/handlebars.js"></script>
+
+
+
+
+</body>
+</html>

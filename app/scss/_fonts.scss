@@ -1,0 +1,8 @@
+@import "_mixins/font-face";
+
+@include font-face("roboto-example", "../fonts/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold", bold);
+@include font-face("roboto-exampleIt", "../fonts/Roboto-LightItalic");
+@include font-face("MontserratBold", "../fonts/fonts/Montserrat-Bold");
+@include font-face("MontserratReg", "../fonts/Montserrat-Regular");
+@include font-face("KaushanReg", "../fonts/KaushanScript-Regular");
